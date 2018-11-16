@@ -1,0 +1,23 @@
+﻿1，下载完成后 （配置）
+$ git config --global user.name "My Name" 
+$ git config --global user.email myEmail@example.com
+
+2. 新建仓库
+创建一个新仓库 – git init
+
+git会把所有文件以及历史记录直接记录成一个文件夹保存在你的项目中。创建一个新的仓库，首先要去到项目路径下，执行git init。这时Git会创建一个隐藏的文件夹.git，所有的历史和配置信息都储存在其中。
+
+比如我们在桌面创建一个文件夹 git_exercise, 打开终端，输入：
+$ cd Desktop/git_exercise/ 
+$ git init
+
+3. 检查状态 – git status
+
+Git status是另一个非常重要的命令，它反馈给我们仓库当前状态的信息：是否为最新代码，有什么更新等等。在我们新建的仓库中执行git status会得到以下内容:
+$ git status 
+On branch master 
+Initial commit 
+Untracked files: 
+  (use "git add ..." to include in what will be committed) 
+hello.txt
+
